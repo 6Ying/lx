@@ -1,138 +1,389 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
-input{
- outline: none;
+
+input {
+    outline: none;
+    border: none;
+    background: none;
+    color: #fff;
 }
-a{
+
+a {
     text-decoration: none;
     color: #fff;
 }
-html{
+
+html {
     width: 100%;
-    height:100%;
+    height: 100%;
     font-size: 62.5%;
 }
-body{
-    width:100%;
-    height:100%;
-    font-size: 1.6rem;
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #fff;
     font-family: "microsoft yahei";
 }
-div.start{
-    width:100%;
-    height:100%;
-    background-image: url(images/bg.jpg);
-    background-size: 100% 100%;
-    min-width: 320px;
-    max-width:1024px;
-}
-div.start .logo{
-    height:53%;
 
-}
-div.start .logo img{
+.register .logo {
+    height: 17.24%;
+    width: 30.66%;
     position: absolute;
-    left: 50%;
-    top:23%;
-    width: 10rem;
-    height:10rem;
-    margin-left: -5rem;
-}
-div.start .input{
-    position: absolute;
-    width:85%;
-    height: 47%;
-    padding: 0 7.5%;
-    /*text-align: center;*/
-}
-div.start .input .a{
-    font-size:1.3rem ;
-    margin-left: 70%;
-}
-div.start .input .bg{
-    background-image:url(images/xx_03.png);
+    top: 15.29%;
+    left: 30.66%;
+    border-radius: 50%;
+    background-image: url(images/logo.png);
     background-size: 100% 100%;
-    width: 100%;
-    margin-top: 2%;
-}
-div.start .input .bg p{
-    height: 4rem;
-padding-left: 2rem;
-font-size: 1.4rem;
-}
-div.start .input label{
-    color:white;
+    box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0.2);
 }
 
-div.start .input .pw,div.start .input .t{
-    font-size: 1.4rem;
-    display:inline-block;
-    color: #fff;
-    background: none;
-    border:0;
-    height:4rem;
-    width: 55%;
-    line-height:4rem;
-    padding-left:0.5rem;
-}
-div.start .input .pw{
-    height: 3.9rem;
+.register .input {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 5.35rem;
+    padding: 0 6.67%;
+    width: 86.66%;
+    /*height: 47.67%;*/
 }
 
-div.start .input p a{
-    font-size:1.3rem ;
-    /*padding-left:-6rem;*/
-}
-div.start .input .logBtn{
-    width: 100%;
-}
-div.start .input .logBtn .btn{
-    /*width:25.5rem;*/
-    width: 100%;
-    height:4rem;
-    line-height:4rem;
-    border:none;
-    color: #fff;
-    font-size: 1.6rem;
-    background-color: #e75280;
-    text-align: center;
+.register .input .a {
     display: block;
+    font-size: 1.3rem;
+    float: right;
+    margin-right: 2.15rem;
+    margin-bottom: 1.3rem;
+}
+
+.register .input .bg {
+    width: 100%;
+    margin-top: 26px;
+    background-image: url(images/xx_03.png);
+    background-size: 100% 100%;
+}
+
+.register .input .bg p {
+    font-size: 1.4rem;
+    height: 6rem;
+    line-height: 6rem;
+    padding-left: 7.6%;
+}
+
+.register .input .bg p a {
+    font-size: 1.2rem;
+    margin-left: 5rem;
+    margin-right: 2.5rem;
+}
+
+.register .input .regBtn {
+    line-height: 5.5rem;
+    background: #e75280;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.register .link {
+    padding: 0 12.4%;
+    width: 75.2%;
+    line-height: 6.4rem;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+.register .link .left {
+    float: left;
+}
+
+.register .link .right {
+    /*width: 2.75rem;*/
+    height: 2.2rem;
+    float: right;
+}
+
+.register .input .link .right::before {
+    content: url("images/xb_07.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+@media (min-device-width: 375px)and (-webkit-min-device-pixel-ratio: 3) {
+    html {
+        font-size: 71.5%;
+    }
+
+    .register {
+        margin: 0 auto;
+        height: 41.6875rem;
+        width: 100%;
+        background-image: url(images/bg.jpg);
+        background-size: 100% 100%;
+        min-width: 320px;
+        max-width: 750px;
+        position: relative;
+    }
+}
+
+/* iphone6 plus */
+@media (min-device-width: 414px)and (-webkit-min-device-pixel-ratio: 2) {
+    html {
+        font-size: 80.592%;
+    }
+
+    .register {
+        margin: 0 auto;
+        height: 46rem;
+        width: 100%;
+        background-image: url(images/bg.jpg);
+        background-size: 100% 100%;
+        min-width: 320px;
+        max-width: 750px;
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    html {
+        font-size: 100%;
+    }
+
+    .register {
+        margin: 0 auto;
+        height: 85.3rem;
+        width: 100%;
+        background-image: url(images/bg.jpg);
+        background-size: 100% 100%;
+        min-width: 320px;
+        max-width: 750px;
+        position: relative;
+    }
+}
+
+/* 320*360 */
+@media (min-device-width: 360px)and (-webkit-min-device-pixel-ratio: 2) {
+    html {
+        font-size: 71%;
+    }
+
+    .register {
+        margin: 0 auto;
+        height: 40rem;
+        width: 100%;
+        background-image: url(images/bg.jpg);
+        background-size: 100% 100%;
+        min-width: 320px;
+        max-width: 750px;
+        position: relative;
+    }
+}
+
+/* 320*360 */
+@media (min-device-width: 320px)and (max-device-width: 359px)and (-webkit-min-device-pixel-ratio: 2) {
+    html {
+        font-size: 62%;
+    }
+
+    .register {
+        margin: 0 auto;
+        height: 35.559rem;
+        width: 100%;
+        background-image: url(images/bg.jpg);
+        background-size: 100%;
+        min-width: 320px;
+        max-width: 750px;
+        position: relative;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    outline: none;
+    border: none;
+    background: none;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #fff;
     font-family: "microsoft yahei";
 }
-div.start .input .link{
-    padding-top:6% ;
 
-}
-div.start .input .link a{
-    font-size:1.2rem ;
+.register .logo {
+    height: 17.24%;
+    width: 30.66%;
     position: absolute;
-    left:3rem;
+    top: 15.29%;
+    left: 30.66%;
+    border-radius: 50%;
+    background-image: url(images/logo.png);
+    background-size: 100% 100%;
+    box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0.2);
 }
-div.start .input .link .right{
-    background-image:url(images/xb_07.png) ;
-    background-size: 1.2rem 1.2rem;
+
+.register .input {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 5.35rem;
+    padding: 0 6.67%;
+    width: 86.66%;
+    /*height: 47.67%;*/
+}
+
+.register .input .a {
+    display: block;
+    font-size: 1.3rem;
+    float: right;
+    margin-right: 2.15rem;
+    margin-bottom: 1.3rem;
+}
+
+.register .input .bg {
+    width: 100%;
+    margin-top: 26px;
+    background-image: url(images/xx_03.png);
+    background-size: 100% 100%;
+}
+
+.register .input .bg p {
+    font-size: 1.4rem;
+    height: 6rem;
+    line-height: 6rem;
+    padding-left: 7.6%;
+}
+
+.register .input .bg p a {
+    font-size: 1.2rem;
+    margin-left: 5rem;
+    margin-right: 2.5rem;
+}
+
+.register .input .regBtn {
+    line-height: 5.5rem;
+    background: #e75280;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.register .link {
+    padding: 0 12.4%;
+    width: 75.2%;
+    line-height: 6.4rem;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+.register .link .left {
+    float: left;
+}
+
+.register .link .right {
+    /*width: 2.75rem;*/
+    height: 2.2rem;
+    float: right;
+}
+
+.register .input .link .right::before {
+    content: url("images/xb_07.png");
+    background-size: 100%;
     background-repeat: no-repeat;
-    padding-left:1.2rem ;
-    margin-left: 60%;
 }
-@media (min-device-width : 375px) and (max-device-width : 413px) and (-webkit-min-device-pixel-ratio : 2){
-    html{font-size: 71.5%; }
+
+@media (min-device-width: 375px)and (max-device-width: 413px)and(-webkit-min-device-pixel-ratio: 3) {
+    html {
+        font-size: 73.24%;
+    }
+
+    .register {
+        margin: 0 auto;
+        height: 41.6875rem;
+        width: 100%;
+        background-image: url(images/bg.jpg);
+        background-size: 100% 100%;
+        max-width: 750px;
+        position: relative;
+    }
 }
+
 /* iphone6 plus */
-@media (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3){
-    html{font-size:80.592%;}
+@media (min-device-width: 414px)and (max-device-width: 749px)and (-webkit-min-device-pixel-ratio: 2) {
+    html {
+        font-size: 82.8%;
+    }
+
+    .register {
+        margin: 0 auto;
+        height: 46.023rem;
+        width: 100%;
+        background-image: url(images/bg.jpg);
+        background-size: 100% 100%;
+        max-width: 750px;
+        position: relative;
+    }
 }
-@media only screen and (min-width:737px) {
-    html { font-size:140%; }
-}
-/* 320*360 */
-@media (min-device-width : 360px) and (max-device-width : 374px) and (-webkit-min-device-pixel-ratio : 2){
-    html{font-size: 71%; }
+
+@media only screen and (min-width: 750px) {
+    html {
+        font-size: 100%;
+    }
+
+    .register {
+        margin: 0 auto;
+        height: 85.3rem;
+        width: 100%;
+        background-image: url(images/bg.jpg);
+        background-size: 100% 100%;
+        max-width: 750px;
+        position: relative;
+    }
 }
 
 /* 320*360 */
-@media (min-device-width : 320px)and (max-device-width : 359px)and (-webkit-min-device-pixel-ratio : 2){
-    html{font-size: 62%; }
+@media (min-device-width: 360px)and (max-device-width: 374px)and (-webkit-min-device-pixel-ratio: 2) {
+    html {
+        font-size: 70.31%;
+    }
+    .register {
+        margin: 0 auto;
+        height: 40.02rem;
+        width: 100%;
+        background-image: url(images/bg.jpg);
+        background-size: 100% 100%;
+        max-width: 750px;
+        position: relative;
+    }
+}
+
+/* 320*360 */
+@media (min-device-width: 320px)and (max-device-width: 359px)and (-webkit-min-device-pixel-ratio: 2) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .register {
+        margin: 0 auto;
+        height: 35.573rem;
+        width: 100%;
+        background-image: url(images/bg.jpg);
+        background-size: 100%;
+        max-width: 750px;
+        position: relative;
+    }
 }
