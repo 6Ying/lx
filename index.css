@@ -20,101 +20,89 @@ body{
     font-size: 1.6rem;
     font-family: "microsoft yahei";
 }
-div.start{
+div.register{
     width:100%;
     height:100%;
     background-image: url(images/bg.jpg);
-    background-size: 100% 100%;
+    background-size: 100%;
     min-width: 320px;
     max-width:1024px;
 }
-div.start .logo{
-    height:53%;
-
+div.register .logo{
+    height:52.32%;
 }
-div.start .logo img{
+div.register .logo img{
     position: absolute;
-    left: 50%;
-    top:23%;
-    width: 10rem;
-    height:10rem;
-    margin-left: -5rem;
+    left: 30.66%;
+    top:20.77%;
+    width: 11.5rem;
+    height:11.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1.5rem rgba(255,255,255,0.2);
 }
-div.start .input{
+div.register .input{
     position: absolute;
     width:85%;
-    height: 47%;
-    padding: 0 7.5%;
+    height: 47.67%;
+    padding: 0 6.6%;
     /*text-align: center;*/
 }
-div.start .input .a{
+div.register .input .a{
     font-size:1.3rem ;
-    margin-left: 70%;
+    margin-left: 68%;
 }
-div.start .input .bg{
+div.register .input .bg{
     background-image:url(images/xx_03.png);
     background-size: 100% 100%;
     width: 100%;
-    margin-top: 2%;
+    margin-top: 1.3rem;
 }
-div.start .input .bg p{
-    height: 4rem;
-padding-left: 2rem;
-font-size: 1.4rem;
+div.register .input .bg p{
+    padding-left: 2.5rem;
+    font-size: 1.4rem;
 }
-div.start .input label{
+div.register .input label{
     color:white;
 }
 
-div.start .input .pw,div.start .input .t{
+div.register .input .pw,div.register .input .t{
     font-size: 1.4rem;
     display:inline-block;
     color: #fff;
     background: none;
     border:0;
-    height:4rem;
-    width: 55%;
-    line-height:4rem;
-    padding-left:0.5rem;
-}
-div.start .input .pw{
-    height: 3.9rem;
+    padding: 7.5% 0;
+    width: 50%;
 }
 
-div.start .input p a{
+div.register .input p a{
+    display:inline-block;
     font-size:1.3rem ;
-    /*padding-left:-6rem;*/
+    padding-right:2.5rem;
 }
-div.start .input .logBtn{
+div.register .input .logBtn{
+    z-index: 100;
     width: 100%;
-}
-div.start .input .logBtn .btn{
-    /*width:25.5rem;*/
-    width: 100%;
-    height:4rem;
-    line-height:4rem;
-    border:none;
-    color: #fff;
-    font-size: 1.6rem;
-    background-color: #e75280;
+    font-size: 1.8rem;
+    padding: 2.82% 0;
     text-align: center;
-    display: block;
-    font-family: "microsoft yahei";
+    background:#e75280 ;
+    color: #fff;
 }
-div.start .input .link{
-    padding-top:6% ;
+div.register .input .link{
+    padding:6%  0;
 
 }
-div.start .input .link a{
+div.register .input .link a{
     font-size:1.2rem ;
     position: absolute;
     left:3rem;
 }
-div.start .input .link .right{
+div.register .input .link .right{
     background-image:url(images/xb_07.png) ;
     background-size: 1.2rem 1.2rem;
     background-repeat: no-repeat;
-    padding-left:1.2rem ;
+    padding-left:1.3rem ;
     margin-left: 60%;
 }
 @media (min-device-width : 375px) and (max-device-width : 413px) and (-webkit-min-device-pixel-ratio : 2){
@@ -124,8 +112,8 @@ div.start .input .link .right{
 @media (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3){
     html{font-size:80.592%;}
 }
-@media only screen and (min-width:737px) {
-    html { font-size:140%; }
+@media only screen and (min-width:750px) {
+    html { font-size:140.9%; }
 }
 /* 320*360 */
 @media (min-device-width : 360px) and (max-device-width : 374px) and (-webkit-min-device-pixel-ratio : 2){
